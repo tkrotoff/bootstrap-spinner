@@ -39,6 +39,7 @@
     "bootstrap": ">=4.4"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
     "@tkrotoff/bootstrap-floating-label": "^0.7.0",
     "@types/stylelint": "^9.10.1",
     "bootstrap": "^4.6.0",
