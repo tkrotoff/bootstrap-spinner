@@ -20,7 +20,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "clean": "rm -rf dist .cache",
+    "clean": "rm -rf dist .parcel-cache",
     "clean:all": "npm run clean && rm -rf node_modules package-lock.json",
     "start": "npm run clean && parcel example/index.html --open",
     "build": "npm run clean && parcel build example/index.html --public-url ./",
