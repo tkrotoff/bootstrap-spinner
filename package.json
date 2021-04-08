@@ -22,7 +22,7 @@
   "scripts": {
     "clean": "rm -rf dist .parcel-cache",
     "clean:all": "npm run clean && rm -rf node_modules package-lock.json",
-    "start": "npm run clean && parcel example/index.html --open",
+    "start": "npm run clean && parcel serve example/index.html --open",
     "build": "npm run clean && parcel build example/index.html --public-url ./",
     "format": "prettier --write '**/*'",
     "tsc": "tsc",
@@ -47,6 +47,7 @@
     "core-js": "^3.10.1",
     "husky": "^6.0.0",
     "parcel": "^2.0.0-beta.2",
+    "postcss": "^8.2.9",
     "prettier": "^2.2.1",
     "sass": "^1.32.8",
     "stylelint": "^13.12.0",

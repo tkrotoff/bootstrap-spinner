@@ -4,7 +4,7 @@
 
 /** @type {import('postcss').ProcessOptions & {plugins: import('postcss').Plugin[]}} */
 const config = {
-  plugins: [require('postcss-preset-env')]
+  plugins: [require('autoprefixer')]
 };
 
 module.exports = config;
