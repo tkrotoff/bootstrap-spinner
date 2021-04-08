@@ -42,6 +42,7 @@
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "@tkrotoff/bootstrap-floating-label": "^0.7.0",
     "@types/stylelint": "^9.10.1",
+    "autoprefixer": "^10.2.5",
     "bootstrap": "^4.6.0",
     "core-js": "^3.10.1",
     "husky": "^6.0.0",
