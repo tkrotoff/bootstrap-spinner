@@ -14,7 +14,7 @@
     "loading",
     "spinner"
   ],
-  "main": "example/index.html",
+  "main": "index.html",
   "files": [
     "src/"
   ],
@@ -22,8 +22,8 @@
   "scripts": {
     "clean": "rm -rf dist .cache",
     "clean:all": "npm run clean && rm -rf node_modules package-lock.json",
-    "start": "npm run clean && parcel example/index.html --open",
-    "build": "npm run clean && parcel build example/index.html --public-url ./",
+    "start": "npm run clean && parcel index.html --open",
+    "build": "npm run clean && parcel build index.html --public-url ./",
     "format": "prettier --write '**/*'",
     "tsc": "tsc",
     "lint": "stylelint '**/*.scss' && npm run tsc",
@@ -34,7 +34,11 @@
     "npm:update": "npm run clean:all && npx npm-check-updates --upgrade && npm install",
     "publish:beta": "npm version 0.10.0-beta.1 && npm publish --tag next --dry-run"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@tkrotoff/bootstrap-floating-label": "^0.11.2",
+    "core-js": "^3.12.0",
+    "tocbot": "^4.12.3"
+  },
   "peerDependencies": {
     "bootstrap": ">=5.0.0"
   },
